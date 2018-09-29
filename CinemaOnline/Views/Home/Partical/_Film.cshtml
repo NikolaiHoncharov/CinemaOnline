@@ -2,13 +2,32 @@
 
 <section class="premiere">
     <div class="container">
-        @foreach (var m in Model)
-         {
-            <a href='@Url.Action("Movie", "Home",  new {id=m.MovieId })' class="card ">
-                <img src=@m.ImgLogoSrc alt=@m.NameM>
-                <p>@m.NameM</p>
-            </a>
-         }
+        <ul class="bxslider ">
+            @foreach (var m in Model)
+            {
+                <li class="card">
+                    <a href='@Url.Action("Movie", "Home",  new {id=m.MovieId })' class="card ">
+                        <img src=@m.ImgLogoSrc alt=@m.NameM>
+                        <p>@m.NameM</p>
+                    </a>
+                </li>
+            }
+        </ul>
     </div>
 </section>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
 
+<script>
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            mode: 'horizontal',
+            moveSlides: 1,
+            slideMargin: 10,
+            infiniteLoop: true,
+            slideWidth: 500,
+            minSlides: 7,
+            maxSlides: 9,
+            speed: 800
+        });
+    });
+</script>

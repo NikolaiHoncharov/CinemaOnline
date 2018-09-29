@@ -173,13 +173,21 @@
     <Content Include="App_Data\CinemaOnline_log.ldf">
       <DependentUpon>CinemaOnline.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\jquery.bxslider.min.css" />
+    <Content Include="image\ServiceImg\controls.png" />
+    <Content Include="image\ServiceImg\playm.png" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.bxslider.min.js" />
     <Content Include="Scripts\scripts.js" />
     <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="image\LogoMovieImg\1.jpg" />
     <Content Include="image\LogoMovieImg\12v508249532_b63d3cf.jpg" />
     <Content Include="image\LogoMovieImg\1479490011z18_1b03526.jpg" />
@@ -209,8 +217,8 @@
     <Content Include="image\ServiceImg\h-logo.png" />
     <Content Include="image\ServiceImg\noav.png" />
     <Content Include="image\ServiceImg\up-arrow.svg" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -248,11 +256,11 @@
     <Content Include="Views\Admin\Edit.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Home\Partical\_Commet.cshtml" />
+    <Content Include="Views\Home\Partical\_LoginModel.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

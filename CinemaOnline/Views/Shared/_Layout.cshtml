@@ -18,7 +18,6 @@
      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body id="top">
-    <div class="test-container">
         <header class="header">
             <div class="container">
                 <div class="logo">
@@ -28,7 +27,7 @@
                     <div class="search">
                         @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @id = "search" }))
                         {
-                            <input type="text" name="inputSearch" id="inputSearch" title="Search" class="inputSearch" placeholder="Поиск...">
+                            <input type="text" name="inputSearch" id="inputSearch" title="Search" class="inputSearch" placeholder="Поиск по сайту...">
                             <input id="btnSearch" type="submit" name="submit" class="btnSearch" value=" Поиск">
                         }
                     </div>
@@ -59,7 +58,6 @@
             </div>
         </footer>
         <div class="btn-top"><a href="#top"><img src="~/image/ServiceImg/up-arrow.svg" alt=""></a></div>
-    </div>
     @Scripts.Render("~/bundles/js")
     @*
         @RenderSection("scripts", required: false)*@

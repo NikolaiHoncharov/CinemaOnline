@@ -12,6 +12,7 @@ namespace CinemaOnline.HtmlHelpers
     {
         public static MvcHtmlString PageLinks(this HtmlHelper html, PagingInfo pagingInfo, Func<int, string>pageUrl)
         {
+
             StringBuilder result = new StringBuilder();
 
             for (int i = 1; i <= pagingInfo.TotalPages; i++)

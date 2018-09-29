@@ -34,16 +34,28 @@ namespace CinemaOnline.Controllers
         [HttpPost]
         public ActionResult Index(string inputSearch)
         {
+            int page = 1;
             if (!String.IsNullOrWhiteSpace(inputSearch))
             {
-                Movie mv = db.Movies.Where(m => m.NameM.Contains(inputSearch)).FirstOrDefault();
-                if (mv != null)
+                MoviessListViewModel model = new MoviessListViewModel
                 {
-                    return RedirectToAction("Movie", "Home", new { id = mv.MovieId });
-                }
-                else return View("Index", "Home");
+
+                    MoviesListAll = db.Movies,
+                    moviespage = db.Movies
+                        .Where(m => m.NameM.Contains(inputSearch))
+                        .OrderByDescending(s => s.DownloadDate)
+                        .Skip((page - 1) * pageSize)
+                        .Take(pageSize),
+                    PagingInfo = new PagingInfo
+                    {
+                        CurrentPage = page,
+                        ItemsPerPage = pageSize,
+                        TotalItems = db.Movies.Count()
+                    }
+                };
+                return View(model);
             }
-            else return View("Index", "Home");
+            else return RedirectToAction("Movie", "Home");
         }
 
         //[Authorize]

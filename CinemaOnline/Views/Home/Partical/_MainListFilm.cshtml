@@ -4,7 +4,7 @@
 {
     <a href='@Url.Action("Movie", "Home",  new {id=m.MovieId })' class="card ">
         <img src=@m.ImgLogoSrc alt=@m.NameM>
-        <p>@m.NameM</p>
-        <p>Год выпуска: <span> @m.Age </span></p>
+        <p class="name-movie">@m.NameM</p>
+        <p ><span class="age-prem"> @m.Age </span></p>
     </a>
 }

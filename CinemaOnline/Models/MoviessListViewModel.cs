@@ -10,5 +10,6 @@ namespace CinemaOnline.Models
         public IEnumerable<Movie> moviespage { get; set; }
         public IEnumerable<Movie> MoviesListAll { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public LoginModel LoginModel { get; set; }
     }
 }

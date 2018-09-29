@@ -56,7 +56,7 @@ input:focus {
     width: 1245px;
     height: 140px;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 200px;
     background-color: #0f1013 /*#1a243a*/;
     border-radius: 20px 20px 0 0;
 }
@@ -283,8 +283,9 @@ input:focus {
 
 
 .content-main .container .card{
+    position: relative;
     width: 240px;
-    max-height: 340px;
+    /*max-height: 340px;*/
     background-color: #30333a;
     text-decoration: none;
     border-radius: 10px;
@@ -300,8 +301,14 @@ input:focus {
     margin-bottom: 0;
 }
 
+.content-main .card .name-movie {
+    margin-left: 11px;
+    padding-left: 22px;
+    background: url('../image/ServiceImg/playm.png') no-repeat;
+    background-size: 18px 17px;
+}
+
 .content-main .card p{
-    text-align: center;
     font-size: 15px;
     margin: 0;
     overflow: hidden;
@@ -310,14 +317,24 @@ input:focus {
 
 .content-main .card span{
     color: red;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .content-main .card p:last-child{
     padding: 5px 0;
+    text-align: center;
+}
+.content-main .card p .age-prem{
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    padding: 1px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,.5);
 }
 
-.content-main .card:hover{
+.content-main .card:hover {
     background-color: #44464c;
     transition: all .3s ease-in-out;
 }
@@ -328,20 +345,18 @@ input:focus {
    padding: 0 5px;
 }
 
-
 /*
     right
 */
-
-    .content-main .right {
-        overflow: hidden;
-        width: 230px;
-        height: 1380px;
-        margin: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        background-color: #30333a;
-    }
+.content-main .right {
+    overflow: hidden;
+    width: 230px;
+    height: 1355px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #30333a;
+}
 
 .right .open {
     position: relative;
@@ -654,7 +669,7 @@ input:focus {
 }
 
 .info-movie .img-logo img{
-    width: 200px;
+    width: 245px;
     height: 320px;
     border: 1px solid #000;
 }
@@ -662,7 +677,7 @@ input:focus {
 .info-movie .info-text{
     height: 350px;
     padding: 0 5px 5px 5px;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 .r-1 {
@@ -788,10 +803,22 @@ input:focus {
     background-color: #3d3939;
     border: none;
     font-size: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
     color: #ccc;
     line-height: 25px;
     box-sizing: border-box;
     padding: 2px 6px;
+}
+
+.contact-form input:hover, textarea:hover{
+    border: 1px solid darkblue;
+}
+
+
+.contact-form input:focus, textarea:focus{
+   outline:none;
 }
 
 .comment-form .comment{
@@ -972,6 +999,9 @@ input:focus {
     padding: 5px;
 }
 
+.container-admin .container-admin-index{
+    font-size: 10px;
+}
 
 .link-page-avtive {
     display: inline-block;

@@ -10,6 +10,7 @@ namespace CinemaOnline
         {
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
                         "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.bxslider.min.js",
                         "~/Scripts/scripts.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -21,6 +22,7 @@ namespace CinemaOnline
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/jquery.bxslider.min.css",
                       "~/Content/style.css"));
         }
     }
