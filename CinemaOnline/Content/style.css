@@ -386,6 +386,21 @@ input:focus {
    padding: 0 5px;
 }
 
+.film-informtext {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.containernavigationfilm {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ddmenu {
+    background-color: #191919;
+    color: #999;
+}
 /*
     right
 */
