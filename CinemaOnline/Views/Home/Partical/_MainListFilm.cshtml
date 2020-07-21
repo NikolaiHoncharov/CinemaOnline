@@ -2,9 +2,16 @@
 
 @foreach (var m in Model)
 {
-    <a href='@Url.Action("Movie", "Home",  new {id=m.MovieId })' class="card ">
-        <img src=@m.ImgLogoSrc alt=@m.NameM>
-        <p class="name-movie">@m.NameM</p>
-        <p ><span class="age-prem"> @m.Age </span></p>
-    </a>
+<a href='@Url.Action("Movie", "Home",  new {id=m.MovieId })' class="card ">
+
+        <img src=@m.ImgLogoSrc alt="@m.NameM" title="@m.NameM">
+        <div class="block">
+            <img src="~/image/ServiceImg/play_21_2.png" class="imgsomeplay" alt="Play now" />
+        </div>
+    <p class="name-movie">@m.NameM</p>
+    <p><span class="age-prem"> @m.Age </span></p>
+
+
+
+</a>
 }

@@ -70,8 +70,8 @@ input:focus {
 }
 
 .container .logo img{
-    width: 380px; 
-    height: 100px;
+    width: 300px; 
+    height: 90px;
 }
 
 .navigation{
@@ -295,11 +295,52 @@ input:focus {
 }
 
 .content-main .card img{
+
     width: 224px;
     height: 270px;
     margin: 8px;
     margin-bottom: 0;
 }
+
+
+.holder {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(255,255,255, 0.1);
+   
+    display: none;
+}
+
+.content-main .card .block .imgsomeplay {
+    width: 190px;
+    height: auto;
+    margin: 40% 13%;
+}
+
+.premiere .card .block .imgsomeplaysmall {
+    width: 135px;
+    height: auto;
+    margin: 39% 12%;
+
+}
+
+.card:hover .block {
+    display: block;
+    border-radius: 10px;
+
+}
+.card:hover .name-movie{
+    color: darkred;
+}
+
 
 .content-main .card .name-movie {
     margin-left: 11px;
@@ -1021,3 +1062,20 @@ input:focus {
     color: red;
     text-decoration: none;
 }
+
+
+
+.centralniy {
+    box-sizing: border-box;
+    width: 1245px;
+    margin: 0 auto;
+    margin-top: -5px;
+    padding: 7px;
+    background-color: #0f1013 /*#0f1013*/;
+}
+
+    .centralniy .film-inform {
+        background-color: #383535;
+        border-radius: 10px;
+        padding: 1px 5px;
+    }

@@ -175,8 +175,11 @@
     </Content>
     <Content Include="Content\jquery.bxslider.min.css" />
     <Content Include="image\ServiceImg\controls.png" />
+    <Content Include="image\ServiceImg\favicon.ico" />
+    <Content Include="image\ServiceImg\logo_new_4.png" />
     <Content Include="image\ServiceImg\playm.png" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="image\ServiceImg\play_21_2.png" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />

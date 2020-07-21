@@ -156,7 +156,10 @@ namespace CinemaOnline.Controllers
         [OutputCache(Duration = 360)]
         public ActionResult Faq()
         {
-            return View();
+            ContainerMovie cm = new ContainerMovie();
+            cm.Movies = db.Movies;
+            return View(cm);
+            
         }
 
         [OutputCache(Duration = 360)]

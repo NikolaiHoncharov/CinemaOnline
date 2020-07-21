@@ -1,6 +1,6 @@
 ﻿@model CinemaOnline.Models.MoviessListViewModel
 @{
-    ViewBag.Title = "GidOnline - мы самый лучший онлайн кинотеатр!";
+    ViewBag.Title = "DostFilms.ru - мы самый лучший онлайн кинотеатр!";
 }
 @Html.Partial("Partical/_Film", Model.MoviesListAll.Take(9))
 @Html.Partial("Partical/_Genre", Model.MoviesListAll)
@@ -13,3 +13,18 @@
     </div>
     @Html.Partial("Partical/_FilmRight", Model.MoviesListAll.Where(m => m.Genre.Contains("сериалы")).OrderByDescending(s => s.DownloadDate).Take(4))
 </section>
+
+<div class="centralniy">
+    <hr />
+    <div class="film-inform">
+        <h2 style="text-align: center;"><span style="color:#FFEFDB;"><strong><span style="font-size: 16px;"><span style="font-family: Play;">Смотреть фильмы онлайн бесплатно в хорошем качестве HD 720p</span></span></strong></span></h2>
+        <p style="text-align: justify;"><span style="font-family:Play "><span style="font-size: 14px;">Салют, салам, хэллоу! Подскажите, кто здесь сейчас упомянул о <strong>фильмах онлайн</strong>? Так, вам еще и <strong>в хорошем качестве HD 720p</strong> подавать? Всегда радуемся, если человек знает, чего хочет. Вот так четко и заказывает: «Мне, пожалуйста, двойную порцию лучших <strong>фильмов онлайн</strong>, но без рекламы, а еще свежий салат из убойных боевиков и острых приключений. Не забудьте легкий комедийный соус добавить, а ребенку полную тарелку мультфильмов.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family:Play"><span style="font-size: 14px;">Некоторые сразу «счет» просят — но мы тут же напоминаем, что в нашем «ресторане» <strong>смотреть фильмы онлайн в HD</strong> можно бесплатно! Между прочим, мы даже никакого учета не ведем. Берите и пользуйтесь, как говорится. Хотя, кое-чем поделиться придется — с вас три часа здорового смеха в национальной валюте и пара дней прекрасного настроения. </span></span></p>
+        <p style="text-align: justify;"><span style="font-family:Play"><span style="font-size: 14px;">Кто там забыл дорогу в мир волшебных сказок, лихо закрученных сюжетов и внезапных поворотов? <strong>Лучшие фильмы</strong> на дороге не валяются, а бережно хранятся на портале <strong>Достфилмс</strong>. Слышали о таком? Там на входе надпись висит «<strong>Смотреть фильмы онлайн в HD качестве</strong>», а уж указатель вас на нужную тропинку выведет.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family:Play"><span style="font-size: 14px;">Какие жанры имеются? Просто отличный вопрос и ответ на него честный: все! Буквально любой жанр к вашему вниманию — от зомби-хорроров до милых и пушистых семейных фильмов. Фантастику желали с элементами триллера? Может военные драмы интересуют? Смотреть не пересмотреть всего — сами убедитесь!&nbsp;</span></span><span style="font-family:Play"><span style="font-size: 14px;"><strong>Смотреть фильмы онлайн</strong> вообще все любят — скачивать не нужно, ждать незачем, а когда <strong>в хорошем качестве HD 720p</strong> любимое кино увидите, то сразу же влюбитесь! Да, дорогие, у нас по-другому и быть не может — работа такая, людей счастливыми делаем.</span></span></p>
+        <p style="text-align: justify;"><span style="font-family:Play"><span style="font-size: 14px;">Может быть вы новичок в кинематографе? У нас имеется штатный проводник, обитает в разделе «<strong>Подборки</strong>». Вам теперь не придется ломать голову и засыпать окружающих вопросами — мол, где же <strong>смотреть фильмы онлайн в HD качестве</strong> и откуда взять информацию о лучших из них? Знакомая ситуация, не правда ли? </span></span></p>
+        <p style="text-align: justify;"><span style="font-family:Play"><span style="font-size: 14px;">Страстный любитель новинок? Да здесь их полно — берите, нам не жалко! Только помните, что <strong>смотреть лучшие фильмы онлайн</strong> в одиночку не интересно — друзей приглашайте, всех сюда зовите! Устроим вечеринку — <strong>DostFilms</strong> угощает! Кстати, эти <strong>фильмы онлайн бесплатно</strong> показывают — вот так, даром и отдают в хорошие руки. Только вы уж позаботьтесь о них, удовольствие получите по полной, ладно? </span></span></p>
+        <p style="text-align: justify;"><span style="font-family:Play"><span style="font-size: 14px;">Сразу видно, что ответственный человек попался и вкус есть — с таким приятно поболтать, критикой поделиться. Статьи наши еще не видели? Рекомендуем! В общем, если потребуется очередная «порция» <strong>интересных&nbsp;фильмов</strong> — вы знаете где ее найти.</span></span></p>
+    </div>
+        <hr />
+</div>

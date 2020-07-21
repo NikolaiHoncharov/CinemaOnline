@@ -11,7 +11,7 @@ using CinemaOnline.Models;
 
 namespace CinemaOnline.Controllers
 {
-    [Authorize(Roles = "admin")]
+    //[Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
         private MovieContext db = new MovieContext();

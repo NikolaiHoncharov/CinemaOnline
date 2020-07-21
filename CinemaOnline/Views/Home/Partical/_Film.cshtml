@@ -6,8 +6,12 @@
             @foreach (var m in Model)
             {
                 <li class="card">
+                    
                     <a href='@Url.Action("Movie", "Home",  new {id=m.MovieId })' class="card ">
-                        <img src=@m.ImgLogoSrc alt=@m.NameM>
+                        <img src=@m.ImgLogoSrc alt="@m.NameM" title="@m.NameM">
+                        <div class="block">
+                            <img src="~/image/ServiceImg/play_21_2.png" class="imgsomeplaysmall" alt="Play now" />
+                        </div>
                         <p>@m.NameM</p>
                     </a>
                 </li>
