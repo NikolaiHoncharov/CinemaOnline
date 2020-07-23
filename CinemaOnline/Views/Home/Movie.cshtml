@@ -9,9 +9,15 @@
 
 <section class="content-main">
     <div class="movie-main-cont">
+
+        <div class="info-h1">
+            <h1>@Model.OneMovie.NameM - смотреть онлайн</h1>
+        </div>
+
         <div class="info-movie">
+
             <div class="img-logo">
-                <img src=@Model.OneMovie.ImgLogoSrc alt="@Model.OneMovie.NameM" title="@Model.OneMovie.NameM">
+                <img class="info-movie-image" src=@Model.OneMovie.ImgLogoSrc alt="@Model.OneMovie.NameM" title="@Model.OneMovie.NameM">
             </div>
             <div class="info-text">
                 <div class="r-1">
@@ -38,6 +44,10 @@
                     <div class="info-item"><p>В ролях</p></div>
                     <div class="info-answer"><p>@Model.OneMovie.Actor</p></div>
                 </div>
+                <div class="r-1">
+                    <div class="info-item"><p>Время</p></div>
+                    <div class="info-answer"><p>@Model.OneMovie.Time</p></div>
+                </div>
             </div>
         </div>
 
@@ -45,23 +55,19 @@
             <h3>Про фильм</h3>
             <p><span>@Model.OneMovie.Description </span></p>
         </div>
-        <hr />
         <h2 class="zagolovokdp" style=" font-size: 20px; padding-bottom: 3px; text-align: center;">
             Смотреть фильм «@Model.OneMovie.NameM» в хорошем качестве
         </h2>
-        <hr />
+        
         <div class="video-trailer">
             <iframe width="980" height="540" class="ifram" src="@Model.OneMovie.VideoLinkSrc" frameborder="0" scrolling="no" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-
         <div class="about-movie">
-            <hr />
-            <span style="margin-left: 0px; margin-right: 0px; text-align: justify; font-size:10pt">
-
+           
+            <span class="about-movieinfo">
                 Важно! Хотим сообщить, что «<b>@Model.OneMovie.NameM</b>» можно смотреть онлайн в хорошем качестве 720p, HD, 2K даже на Айфоне или Андроиде, причем совершенно бесплатно только у нас!
-
             </span>
-            <hr />
+           
         </div>
         <div class="commit">
             <div class="title-cm">Добавить комментарий:</div>
@@ -82,8 +88,8 @@
                             <p> @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })</p>
                         }
                         @*@Html.EditorFor(model => model.Title, new { @class = "comment" })
-                        @Html.LabelFor(model => model.Title)
-                        <p> @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })</p>*@
+                            @Html.LabelFor(model => model.Title)
+                            <p> @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })</p>*@
                     </div>
                     <input type="hidden" id="MovieId" name="MovieId" value=@Model.OneMovie.MovieId />
                     @Html.TextAreaFor(model => model.Content, new { @class = "comment", @rows = 6, @cols = 70 })

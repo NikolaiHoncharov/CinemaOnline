@@ -25,13 +25,17 @@
     $(document).ready(function () {
         $('.bxslider').bxSlider({
             mode: 'horizontal',
+            pager: false,
+            controls: true,
+            auto: true,
+            pause: 5000,   
             moveSlides: 1,
             slideMargin: 10,
             infiniteLoop: true,
             slideWidth: 500,
             minSlides: 7,
-            maxSlides: 9,
-            speed: 800
+            maxSlides: 7,
+            speed: 600
         });
     });
 </script>
